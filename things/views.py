@@ -3,5 +3,5 @@ from .forms import *
 from .models import *
 
 def home(request):
-    form = Things_Form()
+    form = ThingForm()
     return render(request, 'home.html', {'form': form})

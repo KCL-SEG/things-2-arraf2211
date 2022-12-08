@@ -7,5 +7,12 @@
     Things
   </h1>
   <p>Some stuff about things goes here.</p>
+  <form action="" method="post">
+    <div>
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input class="button" type="submit" value="create">
+    </div>
+  </form>
 </body>
 </html>

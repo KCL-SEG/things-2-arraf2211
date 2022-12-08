@@ -20,4 +20,5 @@ from things import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+    #path('create_thing', views.create_thing, name='create_thing'),
 ]
